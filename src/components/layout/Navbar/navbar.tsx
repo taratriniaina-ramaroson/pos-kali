@@ -1,24 +1,24 @@
 import {
+  BuildingStorefrontIcon,
   PresentationChartLineIcon,
-  ShoppingCartIcon,
   TruckIcon,
-} from "@heroicons/react/24/outline";
+} from "@heroicons/react/24/solid";
 import NavLink from "./navlink";
 
 const Navbar = () => {
   return (
-    <div className="w-56 px-6 border-r-gray-200 border-r">
+    <div className="w-24 px-4 border-r-gray-200 border-r">
       <div className="my-6 text-lg font-semibold text-red-600">KALI</div>
       <nav>
         <ul role="list">
           <NavLink href="/">
-            <ShoppingCartIcon className="w-6 mr-2" /> Point de vente
+            <BuildingStorefrontIcon className="w-6 mr-2" /> Caisse
           </NavLink>
-          <NavLink href="/inventaire">
-            <TruckIcon className="w-6 mr-2" /> Inventaire
+          <NavLink href="/stock">
+            <TruckIcon className="w-6 mr-2" /> Stock
           </NavLink>
-          <NavLink href="/statistiques">
-            <PresentationChartLineIcon className="w-6 mr-2" /> Statistiques
+          <NavLink href="/ventes">
+            <PresentationChartLineIcon className="w-6 mr-2" /> Ventes
           </NavLink>
         </ul>
       </nav>

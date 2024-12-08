@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${Inter.variable} antialiased flex h-screen`}>
+      <body className={`${Inter.variable} antialiased flex min-h-screen`}>
         <Navbar />
         <main className="flex-grow bg-slate-50 p-6">{children}</main>
       </body>

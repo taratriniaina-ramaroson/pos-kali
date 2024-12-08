@@ -10,10 +10,10 @@ const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({
 }) => {
   const pathname = usePathname();
   return (
-    <li className="mb-2">
+    <li className="mb-6">
       <Link
         href={href}
-        className={`p-2 rounded flex hover:bg-red-50 hover:text-red-600 ${
+        className={`p-2 flex flex-col items-center hover:bg-red-50 hover:text-red-600 text-sm font-semibold ${
           pathname === href ? "bg-red-50 text-red-600" : ""
         }`}
       >
