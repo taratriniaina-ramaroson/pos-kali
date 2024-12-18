@@ -1,4 +1,4 @@
-import { categories } from "@/mock/items";
+import { categories } from "@/mock/categories";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import Item from "./item";
 
